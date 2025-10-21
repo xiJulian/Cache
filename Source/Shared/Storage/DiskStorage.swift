@@ -187,7 +187,7 @@ extension DiskStorage {
    - Parameter key: Unique key to identify the object in the cache
    - Returns: A string path based on key
    */
-  func makeFilePath(for key: Key) -> String {
+  public func makeFilePath(for key: Key) -> String {
     return "\(path)/\(makeFileName(for: key))"
   }
 
