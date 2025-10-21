@@ -7,7 +7,7 @@ public final class Storage<Key: Hashable, Value> {
   /// Used for sync operations
   private let syncStorage: SyncStorage<Key, Value>
   private let asyncStorage: AsyncStorage<Key, Value>
-  private let hybridStorage: HybridStorage<Key, Value>
+  public let hybridStorage: HybridStorage<Key, Value>
 
   /// Initialize storage with configuration options.
   ///
